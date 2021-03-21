@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Navbar from "./NavBar"
 
 export default function Header({title}) {
    return (
@@ -14,6 +15,7 @@ export default function Header({title}) {
             An example made by Create-React-App.
          </p>
          <hr className="hr-header-line" />
+         <Navbar/>
       </div>
    );
 }

@@ -119,6 +119,31 @@ body {
   opacity: 1;
 }
 
+/* navbar */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.nav-item{
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  opacity: 0.6;
+  transition: opacity .25s linear;
+}
+
+.nav-item:hover{
+  color: white;
+  opacity: 1;
+}
+
+.nav-item--active{
+  opacity: 1;
+}
 
 /* Product Item */
 .product {
