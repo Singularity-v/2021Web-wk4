@@ -235,6 +235,22 @@ body {
   flex-direction: column;
 }
 
+.product-status,
+.product-qty,
+.product-color {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.qty-number {
+  color: white;
+  background-color: #111828;
+}
+
+.select-style {
+  font-size: 0.8rem;
+}
+
 .btn-tocar {
   height: auto;
   font-size: 1.2rem;
@@ -245,4 +261,15 @@ body {
   .product-image {
     height: 24rem;
   }
+}
+
+.buy-options{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-color {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-left: 2em;
 }

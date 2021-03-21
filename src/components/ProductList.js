@@ -1,5 +1,5 @@
 import ProductItem from "./ProductItem";
-import {Row,Col} from "antd";
+import { Row,Col } from "antd";
 
 export default function ProductList({products}) {
   return (
