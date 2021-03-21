@@ -1,21 +1,24 @@
 import { Layout } from 'antd';
 import AppHeader from "../components/Header"
-import ProductList from "../components/ProducList"
 import AppFooter from "../components/Footer"
-//import NavBar from "../components/NavBar"
+import ProductList from "../components/ProducList";
 
-const { Header, Content, Footer }= Layout;
+const { Header, Content, Footer } = Layout;
+
+
+
 function Home() {
   return (
-    <Layout className="container main-layput">
-      <AppHeader/>
-      <Header/>
+    <Layout className="container main-layout">
+      <Header className="layout-header">
+        <AppHeader title="NORDIC NEST Shopping Cart"/>
+      </Header>
       <Content className="layout-content">
         <ProductList/>
       </Content>
-      <Footer className="layout-content">
-        <AppFooter/>
-      </Footer>
+      <Footer className="layout-footer">
+        <AppFooter/>  
+      </Footer>      
     </Layout>
   );
 }

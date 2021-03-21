@@ -1,15 +1,19 @@
-export default function Header() {
-    return (
-        <header className="header">
-            <h2 className="header-tilte">
-                NORDIC NEST Shopping Cart
-            </h2>
+import { Link } from "react-router-dom"
 
-            <p
-                className="header-slogan">
-                An example made by Create-React-App.
-            </p>
-            <hr className="hr-header-line" />
-        </header>
-    );
+export default function Header({title}) {
+   return (
+      <div className="header">
+         <Link to="/">
+            <h1 className="header-title">
+               {title}
+            </h1>
+         </Link>
+
+         <p
+            className="header-slogan">
+            An example made by Create-React-App.
+         </p>
+         <hr className="hr-header-line" />
+      </div>
+   );
 }
