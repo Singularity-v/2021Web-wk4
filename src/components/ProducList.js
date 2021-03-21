@@ -1,12 +1,21 @@
+import {Row, Col} from "antd";
 import ProductItem from "./ProductItem";
 import products from "../json/products.json";
 
 export default function ProductList() {
   return (
-    <div className="main row products">
+    <Row gutter={[32,32]}>
       {products.map(product => (
-        <ProductItem key={product.id} product={product}/>
+        <Col
+          key={product.id}
+          sm={{span: 12 }}
+          lg={{span: 8 }}
+          xl={{sapn: 6 }}
+          xxl={{ span:4 }}
+        >
+          <ProductItem product={product}/>
+        </Col>
       ))}
-    </div>
+    </Row>
   );
 }

@@ -1,18 +1,22 @@
-import Header from "../components/Header"
+import { Layout } from 'antd';
+import AppHeader from "../components/Header"
 import ProductList from "../components/ProducList"
-import Footer from "../components/Footer"
-import NavBar from "../components/NavBar"
+import AppFooter from "../components/Footer"
+//import NavBar from "../components/NavBar"
 
+const { Header, Content, Footer }= Layout;
 function Home() {
   return (
-    <div className="bg-color">
-        <div className="container grid-container">
-            <Header />
-            <NavBar/>
-            <ProductList />
-            <Footer />
-        </div>
-    </div>
+    <Layout className="container main-layput">
+      <AppHeader/>
+      <Header/>
+      <Content className="layout-content">
+        <ProductList/>
+      </Content>
+      <Footer className="layout-content">
+        <AppFooter/>
+      </Footer>
+    </Layout>
   );
 }
 
